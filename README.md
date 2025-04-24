@@ -29,7 +29,7 @@ LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-
 
 1. In your Flutter app's `pubspec.yaml`, add the following dependencies:
 
-Get the latest version from `https://pub.dev/packages/appium_flutter_server/install`
+   Get the latest version from `https://pub.dev/packages/appium_flutter_server/install`
 
    ```yaml
    dev_dependencies:
