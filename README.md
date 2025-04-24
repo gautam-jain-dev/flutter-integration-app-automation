@@ -15,10 +15,10 @@ LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-
 
 The Appium Flutter Integration Driver tests on LambdaTest are supported with the following platform versions:
 
-- ✅ Android: Version 12 and above (Emulators)
-- ✅ iOS: Version 14.2 and above (Simulators)
+- Android: Version **12 and above** (Emulators)
+- iOS: Version **14.2 and above** (Simulators)
+- These tests are executed using **Appium 2.x versions**.  
 
-These tests are executed using Appium 2.x versions.
 📌 For a full list of supported capabilities, visit the [LambdaTest Capability Generator](https://www.lambdatest.com/capabilities-generator/)
 
 ---
