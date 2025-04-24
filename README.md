@@ -6,11 +6,11 @@ Test your **Flutter apps** on **LambdaTest Android Emulators** and **iOS Simulat
 
 ## 🚀 Overview
 
-LambdaTest supports running integration tests on Flutter apps using the [`appium-flutter-integration-driver`](https://github.com/appium-boneyard/appium-flutter-driver). This setup allows you to run tests in **Python**, **Java**, **Ruby**, and other languages supported by Appium — all while automatically managing Flutter’s rendering cycles and eliminating context switching.
+LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-driver`](https://github.com/AppiumTestDistribution/appium-flutter-integration-driver). This setup allows you to run tests in **Python**, **Java**, **JS**, and other languages supported by Appium — all while automatically managing Flutter’s rendering cycles and eliminating context switching.
 
 > ⚠️ **Note:**  
-> - Works on **Android 12+**  
-> - Works on **iOS 14+**  
+> - Works on **Android 12 and above**  
+> - Works on **iOS 14.0 and above**  
 > - Only supported on **virtual devices** (emulators/simulators)  
 > - For exact device/capability values, visit the [LambdaTest Capability Generator](https://www.lambdatest.com/capabilities-generator/)
 
@@ -18,7 +18,7 @@ LambdaTest supports running integration tests on Flutter apps using the [`appium
 
 ## 📦 Prerequisites
 
-- A [LambdaTest account](https://www.lambdatest.com/)
+- A [LambdaTest](https://www.lambdatest.com/) account
 - A Flutter project
 
 ## 🔧 Prepare the app with Flutter Integration Server
@@ -69,15 +69,10 @@ Get the latest version from `https://pub.dev/packages/appium_flutter_server/inst
     ```bash
       flutter build ios integration_test/appium.dart --simulator
     ```
-    For Real Device - Release mode
-    ```bash
-      flutter build ipa --release integration_test/appium.dart
-    ```
 
-Bingo! You are ready to run your tests using Appium Flutter Integration Driver.
 
 ## 📤 Upload Your App to LambdaTest
-Before running tests, you need to **upload your Flutter app (APK) to LambdaTest** and get the **app ID**.
+Before running tests, you need to **upload your Flutter app (.apk or .zip) to LambdaTest** and get the **app ID**.
 
 ### **1️⃣ Sign in to LambdaTest**
 - Go to [LambdaTest](https://www.lambdatest.com/)
@@ -85,7 +80,7 @@ Before running tests, you need to **upload your Flutter app (APK) to LambdaTest*
 
 ### **2️⃣ Upload Your App**
 - Navigate to **App Automation** → **Upload App**
-- Upload your `.apk` (Android) file
+- Upload your `.apk` (Android) or `.zip` (iOS) file
 - Once uploaded, **copy the `app ID`** (e.g., `lt://APP123456789123456789`)
 
 ### **3️⃣ Update `config.py` with App ID and Credentials**
@@ -102,7 +97,7 @@ CAPS_ANDROID = {
         "automationName": "FlutterIntegration",
         "platformVersion": "15",
         "deviceName": "Galaxy S25",
-        "app": "lt://APP123456789123456789",
+        "app": "lt://APP123456789123456789", # .apk 
     }
 }
 
@@ -115,7 +110,7 @@ CAPS_IOS = {
         "automationName": "FlutterIntegration",
         "platformVersion": "18.1",
         "deviceName": "iPhone 16 Pro",
-        "app": "lt://APP123456789123456789",
+        "app": "lt://APP123456789123456789", # .zip
     }
 }
 ```
@@ -128,8 +123,8 @@ CAPS_IOS = {
 ### **1️⃣ Clone the Repository**
 Open a terminal and run:
 ```bash
-git clone https://github.com/belaletech/flutter_app_automation.git
-cd flutter_app_automation
+git clone https://github.com/gautam-jain-dev/flutter-integration-app-automation.git
+cd flutter-integration-app-automation
 ```
 
 ### **2️⃣ Create a Virtual Environment**
@@ -156,7 +151,7 @@ pip install -r requirements.txt
 ### **4️⃣ Run the Flutter Test Script**
 Execute the test script:
 ```bash
-python -m tests.test_flutter_app --os <ios/android>
+python -m tests.test_flutter_integration --os <ios/android>
 ```
 
 ---
