@@ -173,6 +173,9 @@ flutter-integration-app-automation/
 │   ├── __init__.py
 │   ├── test_flutter_integration.py  # Main test script
 │── requirements.txt  # Python dependencies
+│── SampleApp  # Sample Apps
+│   ├── flutterIntegrationCounter.apk # android app
+│   ├── flutterIntegrationCounter.zip # ios simulator zip
 │── README.md  # Documentation
 ```
 
