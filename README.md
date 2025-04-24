@@ -1,12 +1,14 @@
 # 🧪 Appium Flutter Integration Testing on LambdaTest
 
+
 Test your **Flutter apps** on **LambdaTest Android Emulators** and **iOS Simulators** using the **Appium Flutter Integration Driver**.
 
 ---
 
+
 ## 🚀 Overview
 
-LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-driver`](https://github.com/AppiumTestDistribution/appium-flutter-integration-driver). This setup allows you to run tests in **Python**, **Java**, **JS**, and other languages supported by Appium — all while automatically managing Flutter’s rendering cycles and eliminating context switching.
+LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-driver`](https://github.com/AppiumTestDistribution/appium-flutter-integration-driver). This setup allows you to run tests in **Python**, **Java**, **JS**, and other languages supported by Appium, all while automatically managing Flutter’s rendering cycles and eliminating context switching.
 
 > ⚠️ **Note:**  
 > - Works on **Android 12 and above**  
@@ -16,10 +18,12 @@ LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-
 
 ---
 
+
 ## 📦 Prerequisites
 
 - A [LambdaTest](https://www.lambdatest.com/) account
 - A Flutter project
+
 
 ## 🔧 Prepare the app with Flutter Integration Server
 
@@ -71,6 +75,7 @@ Get the latest version from `https://pub.dev/packages/appium_flutter_server/inst
     ```
 
 
+
 ## 📤 Upload Your App to LambdaTest
 Before running tests, you need to **upload your Flutter app (.apk or .zip) to LambdaTest** and get the **app ID**.
 
@@ -118,7 +123,8 @@ CAPS_IOS = {
 
 ---
 
-## 🛠️ Step-by-Step Setup Instructions
+
+## 🛠️ Running Instructions
 
 ### **1️⃣ Clone the Repository**
 Open a terminal and run:
@@ -156,6 +162,7 @@ python -m tests.test_flutter_integration --os <ios/android>
 
 ---
 
+
 ## 📁 Project Structure
 ```bash
 flutter-integration-app-automation/
@@ -168,13 +175,5 @@ flutter-integration-app-automation/
 │── requirements.txt  # Python dependencies
 │── README.md  # Documentation
 ```
-
----
-
-## 🚀 How the Test Works
-1️⃣ Uploads the Flutter app to **LambdaTest**  
-2️⃣ Launches the flutter counter app on a **virtual device**  
-3️⃣ Clicks `+` button multiple times 
-4️⃣ Captures and validates the displayed result
 
 ---
