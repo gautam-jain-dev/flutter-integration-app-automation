@@ -10,11 +10,11 @@ Test your **Flutter apps** on **LambdaTest Android Emulators** and **iOS Simulat
 
 LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-driver`](https://github.com/AppiumTestDistribution/appium-flutter-integration-driver). This setup allows you to run tests in **Python**, **Java**, **JS**, and other languages supported by Appium, all while automatically managing Flutter’s rendering cycles and eliminating context switching.
 
-> ⚠️ **Note:**  
-> - Works on **Android 12 and above**  
-> - Works on **iOS 14.0 and above**  
-> - Only supported on **virtual devices** (emulators/simulators)  
-> - For exact device/capability values, visit the [LambdaTest Capability Generator](https://www.lambdatest.com/capabilities-generator/)
+⚠️ **Note:**  
+ - Works on **Android 12 and above**  
+ - Works on **iOS 14.0 and above**  
+ - Only supported on **Virtual Devices** (emulators/simulators)  
+ - For exact device/capability values, visit the [LambdaTest Capability Generator](https://www.lambdatest.com/capabilities-generator/)
 
 ---
 
@@ -48,13 +48,13 @@ LambdaTest supports testing Flutter apps using the [`appium-flutter-integration-
      initializeTest(app: const MyApp());
    }
    ```
-   If you are in need to configure certain prerequists before the testing app is loaded, you can try the following code:
+   If you are in need to configure certain prerequisites before the testing app is loaded, you can try the following code:
    ```dart
    import 'package:appium_testing_app/main.dart'; as app;
    void main() {
      initializeTest(
        callback: (WidgetTester tester) async {
-          // Perform any prerequisite steps or intialise any dependencies required by the app
+          // Perform any prerequisite steps or initialize any dependencies required by the app
           // and make sure to pump the app widget using below statement.
           await tester.pumpWidget(const app.MyApp());
        },
