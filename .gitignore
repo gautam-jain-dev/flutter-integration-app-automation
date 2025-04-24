@@ -1,11 +1,12 @@
 # Ignore Python virtual environment
 venv/
 .env
+.history
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
-*.pyo
+*.pyoclear
 *.pyd
 
 # Ignore system files
